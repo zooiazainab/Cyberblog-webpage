@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberblog - Pakistan Cyberattack</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function checkBattery() {
+            navigator.getBattery().then(function(battery) {
+                if (battery.level < 0.1) {
+                    toggleBatteryOptimizedMode();
+                }
+            });
+        }
+
+        window.addEventListener('load', function() {
+            checkBattery();
+            navigator.getBattery().then(function(battery) {
+                battery.addEventListener('levelchange', checkBattery);
+            });
+        });
+
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+
+        function toggleTextOnlyMode() {
+            const body = document.body;
+            body.classList.toggle("text-only-mode");
+        }
+
+        function toggleBatteryOptimizedMode() {
+            const body = document.body;
+            body.classList.toggle("battery-optimized-mode");
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>ｃｙｂｅｒｂｌｏｇ
+            </h1>
+        </div>
+        <nav>
+           
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="toggle-buttons">
+                <button onclick="toggleDarkMode()">Dark Mode</button>
+                <button onclick="toggleTextOnlyMode()">Text Only Mode</button>
+                <button onclick="toggleBatteryOptimizedMode()">Battery Optimized Mode</button>
+            </div>
+        </nav>
+    </div>
+
+
+    <main>
+        <section class="images" >
+            <h1>ＷＥＬＣＯＭＥ ＴＯ ＯＵＲ ＷＥＢＳＩＴＥ
+            </h1>
+
+        </section>
+        <section class="content">
+            <article>
+                <h1>Cyberattack: 115 Million Pakistani Mobile Users' Data and Personal Information Go on Sale on Dark Web</h1>
+            <p class="intro">In 2020, a major cyberattack took place in Pakistan that resulted in the leak of data belonging to 115 million cell phone users. The incident sent shockwaves throughout the country and highlighted the need for stronger cybersecurity measures.</p>
+            </article>
+            <article>
+                <h2>The Data Leak</h2>
+                <p>The leaked data included sensitive information such as full names, phone numbers, home addresses, and national identification numbers. This type of data is highly valuable to cybercriminals, who can use it for identity theft, financial fraud, and other malicious activities.</p>
+                <p>The attack was a wake-up call for businesses and individuals alike to take cybersecurity seriously. It showed that even large organizations with seemingly robust security protocols can fall victim to cyberattacks if they are not vigilant. In this case, it is believed that the attackers exploited a vulnerability in a third-party software that was being used by the affected telecom company.</p>
+            </article>
+            <article>
+                <h2>The Consequences</h2>
+                <p>The consequences of such a massive data leak can be severe and long-lasting. Theaffected individuals may face identity theft, financial loss, and other cybercrimes. Additionally, the reputation of the telecom company was severely damaged, and it may take a long time for them to regain the trust of their customers.</p>
+                <p>The incident also highlighted the need for stronger cybersecurity measures, not only for businesses but also for individuals. It is essential to use strong passwords, regularly update software, and be cautious when sharing personal information online. Cybersecurity is everyone's responsibility, and it is up to all of us to take the necessary steps to protect ourselves and our data.</p>
+                </article>
+                <article>
+                <h2>The Future</h2>
+                <p>The Pakistan cyberattack serves as a warning to businesses and individuals worldwide that cyber threats are real and can have severe consequences. As technology continues to advance and more of our personal information is stored online, the need for strong cybersecurity measures will only increase.</p>
+                <p>It is essential for businesses to regularly assess their cybersecurity protocols and make improvements where necessary. Individuals should also take steps to protect their personal information and stay up to date on the latest cybersecurity threats and best practices.</p>
+                </article>
+                </section>
+                </main>
+                <footer>
+                    <div class="logo">
+                        <h1>ｃｙｂｅｒｂｌｏｇ
+                        </h1>
+                    </div>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+                <p>Copyright © 2023 Cyberblog</p>
+                </footer>
+                
+                </body>
+                </html>
+                
+                
+                
+                
+                

@@ -1,0 +1,257 @@
+/* /* CSS for desktop screens */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4fa7a1c9;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* CSS for mobile screens */
+  @media only screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav {
+      width: 100%;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+    
+    .toggle-buttons {
+      margin-top: 10px;
+    }
+    .images h1{
+        font-size: 25px;
+    }
+    footer ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      footer li {
+        margin: 10px 0;
+      }
+  }
+ 
+ 
+
+button {
+    background-color: #e9a3a3c4;
+    width: 20vw;
+    border: 3px solid rgb(226, 76, 231);
+    border-radius: 26px;
+    padding: 10px;
+    margin: 4px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.toggle-buttons button {
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color:#e9a3a3c4;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-buttons button:hover {
+    background-color: #e0e0e0;
+}
+
+  .dark-mode button {
+    background-color: #333;
+    color: #fff;
+  }
+  .dark-mode button:hover{
+    background-color: #222;
+    color: #fff;
+  }
+  
+  
+  
+  .dark-mode * {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Text-only mode */
+  .text-only-mode img {
+    display: none;
+  }
+
+  /* battery optimized mode styles */
+  body.battery-optimized-mode .images {
+    background-image: none;
+  }
+  .battery-optimized-mode button{
+    background-color: #333;
+    color: #fff;
+  }
+  .battery-optimized-mode button:hover{
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .battery-optimized-mode *{
+    background-color: #333;
+    color: #fff;
+  }
+
+
+/* Text-only mode styles */
+.text-only-mode .images {
+    background-image: none;
+    color: #000000;
+}
+
+.text-only-mode h2,
+.text-only-mode p {
+    font-size: 16px;
+}
+
+/* Battery optimized mode styles */
+.battery-optimized-mode {
+    animation: blink 1s infinite;
+}
+
+.images{
+    text-align: center;
+    
+    padding-top: 20vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 50)), url(background.jpg);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+
+/* Styles for the hero section */
+main{
+    background-color: #e9a3a3c4;
+    color: #000000;
+}
+
+main h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+main .intro {
+    font-size: 20px;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+
+/* Styles for the content section */
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Styles for the footer section */
+footer {
+    background-color: #4fa7a1c9;
+    color:black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 30px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer li {
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1000px) {
+   
+    .images h1{
+        font-size: 15px;
+    }
+    .images{
+        height: 30vh;
+    }
+    .logo h1{
+        font-size: 20px;
+    }
+    
+}
